@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="Shortcut Icon" href="../images/favicon.ico" type="image/x-icon" />
+    <title>F - Tech : Furniture Marketplace</title>
+
+</head>
+
+<body>
+    <div class="navigation" id="bodytop">
+        <div class="container">
+            <div class="nav-left">
+                <!-- <img src="images/icon-market.png" style="width:20px;height:20px;position:relative;top:0.1em"> -->
+
+                <a href="index-user.html" class="nav-brand"><img class="img-brand"><span
+                        style="font-family:helvetica;">F
+                        -
+                        Tech</span></a>
+                <span>
+                    <a href="javascript:void(0)" onclick="openNav()">Produk</a>
+
+
+                </span>
+            </div>
+
+            <nav class="nav-right">
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                <ul class="nav-list">
+                    <a href="all-transaction.html">
+                        <li class="">Lihat Transaksi </li>
+                    </a>
+                    <li>
+                        <a href="shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </li>
+
+                    <li>
+                        <div class="">
+                            <a href="javascript:void(0)" class="nav-list-user"><i class="fa fa-user"></i>Bakhrul Bila<i
+                                    class="fa fa-caret-down"></i></a>
+                            <ul class="nav-dropdown dropdown-user" style="color:black;">
+                                <a href="profile-user.html" style="border-bottom:1px solid rgba(0,0,0,.125);">
+                                    My Profile
+                                </a>
+                                <a href="../index.html">
+                                    Keluar
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="btnclose-sidenav" onclick="closeNav()">&times;</a>
+                <ul class="">
+                    <li><a href="product-chair-all.html">Kursi</a></li>
+                    <li><a href="product-cupboard-all.html">Lemari</a></li>
+                    <li><a href="product-table-all.html">Meja</a></li>
+                    <li><a href="product-sofa-all.html">Sofa</a></li>
+                    <li><a href="product-bookshelf-all.html">Rak Buku</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="Sidenav-backdoor" id="mySidenav-backdoor"></div>
+    </div>
+
+
+    <section class="header-wrapper height-50">
+        <div class="container">
+
+            <div class=" height-50 d-flex pt-3  align-items-center justify-content-center">
+                <h5 class="title-item-header">TRANSAKSI PEMBELIAN</h5>
+            </div>
+        </div>
+    </section>
+    <section class="mt-2 detail-transaction-wrapper">
+        <div class="container">
+            <div class="breadcumb-product-seller" style="padding:0 15px;">
+                <a class="breadcumb-item"><i class="fa fa-home"></i>&nbsp;Halaman Awal&ensp;/&nbsp;</a>
+                <a class="breadcumb-item">Pembeli&ensp;/&nbsp;</a>
+                <a class="breadcumb-item">Transaksi Pembelian</a>
+            </div>
+            <div class="detail-transaction-warning-box" style="margin-bottom: 1em;">
+                <div><i class="fa fa-warning icon-detail-transaction-warning"></div></i>
+                <ul style="padding-left: 1em;list-style-type: none;">
+                    <li>Kami akan otomatis membatalkan transaksi dan mengembalikan dana pembeli apabila:</li>
+                    <li>1. Penjual tidak mengkonfirmasi pengiriman order pembeli sampai batas waktu hari (5 hari)</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="half column detail-transaction-box">
+                    <div class="box">
+                        <div class=" row header-transaction-box">
+                            <div class="half column">
+                                <h5 class="">Kode transaksi</h5>
+                            </div>
+                            <div class="half column">
+                                <span>FM12UYT89JKLUP7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="half column detail-transaction-box">
+                    <div class="box">
+                        <div class=" row header-transaction-box">
+                            <div class="half column">
+                                <h5 class="">Status </h5>
+                            </div>
+                            <div class="half column">
+                                <span>Belum dibayar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one column detail-transaction-box">
+                    <div class="box">
+                        <div class=" row header-transaction-box">
+                            <div class="half column">
+                                <h5 class="">Batas waktu pembayaran</h5>
+                            </div>
+                            <div class="half column">
+                                <div id="clockdiv" class="time-detail-transaction-payment w-100">
+                                    <span class="hours" id="hours"></span>&nbsp;:&nbsp;
+                                    <span class="minutes" id="minutes"></span>&nbsp;:&nbsp;
+                                    <span class="seconds" id="seconds"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="half column">
+                    <div class="box">
+                        <h3 class="title-purchase-item">Detail Pembeli</h3>
+                        <div class="row detail-people-transaction-body margin-block-0">
+                            <div class="half column">
+                                <p>Nama Lengkap</p>
+                            </div>
+                            <div class="half column">
+                                <p>Muhammad Bakhrul Bila Sakhil</p>
+                            </div>
+                            <div class="half column">
+                                <p>Email</p>
+                            </div>
+                            <div class="half column">
+                                <p>bakhrulrpl@gmail.com</p>
+                            </div>
+                            <div class="half column">
+                                <p>No. HP</p>
+                            </div>
+                            <div class="half column">
+                                <p>085736054778</p>
+                            </div>
+                            <div class="half column">
+                                <p>Kode Pos</p>
+                            </div>
+                            <div class="half column">
+                                <p>67171</p>
+                            </div>
+                            <div class="half column">
+                                <p>Alamat</p>
+                            </div>
+                            <div class="half column">
+                                <p>Jl. Raya Purwosari - Malang, Purwosari, Polerejo, Purwosari, Pasuruan, Jawa
+                                    Timur
+                                    67162 </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="half column">
+                    <div class="box">
+                        <h3 class="title-purchase-item">Detail Barang</h3>
+                        <div class="row detail-item-transaction-body margin-block-0">
+                            <div style="padding-bottom:2em;" class="mt-2">
+                                <img src="../images/product-chair-1.2.jpg">
+                            </div>
+                            <div class="half column">
+                                <p>Nama Barang</p>
+                            </div>
+                            <div class="half column">
+                                <p>Kursi Gaming - Black & blue
+
+                                </p>
+                            </div>
+                            <div class="half column">
+                                <p>Kondisi</p>
+                            </div>
+                            <div class="half column">
+                                <p><span class="condition-item-detail" style="top:0;">Baru</span></p>
+                            </div>
+                            <div class="half column">
+                                <p>Toko</p>
+                            </div>
+                            <div class="half column">
+                                <p>Doves Furniture</p>
+                            </div>
+                            <div class="half column">
+                                <p>Kategori</p>
+                            </div>
+                            <div class="half column">
+                                <p>Kursi</p>
+                            </div>
+                            <div class="half column">
+                                <p>Total Pembayaran</p>
+                            </div>
+                            <div class="half column">
+                                <p>Rp. 2.400.000 </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="one column">
+                    <div class="box">
+                        <h5 class="title-purchase-item">Sudah bayar tapi belum verifikasi otomatis? Konfirmasi disini
+                        </h5>
+                        <div class="confirm-payment-transaction-body column">
+                            <div class="form-group">
+                                <label>Waktu Pembayaran</label>
+                                <select class="form-control">
+                                    <option>Pilih Waktu Pembayaran</option>
+                                    <option>Jam 00.00 - 12.00</option>
+                                    <option>Jam 12.00 - 24.00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Waktu Pembayaran</label>
+                                <select class="form-control">
+                                    <option>Pilih Metode Pembayaran</option>
+                                    <option>alfamart</option>
+                                    <option>indomaret</option>
+                                    <option>alfamidi</option>
+                                    <option>Bank BNI</option>
+                                    <option>Bank BRI</option>
+                                    <option>Bank Mandiri</option>
+                                    <option>Bank BCA</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>3 Digit Nomor Terakhir Transfer</label>
+                                <input type="text" class="form-control" placeholder="example : 342">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Lampirkan Bukti Pembayaran</label>
+                                <img src="../images/bukti-pembayaran.jpeg"
+                                    style="max-width:100%;width: auto;height:auto;max-height: 300px;display: block;margin: auto;">
+                                <input type="file" class="form-control">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <a href="all-transaction.html">
+                                    <button class="btn btn-confirm-payment-transaction">Konfirmasi Sekarang</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one column">
+                    <div class="box">
+                        <h3 class="title-purchase-item">Melakukan Pembayaran melalui Rekening</h3>
+                        <div class="mbanking-detail-transaction-body ">
+                            <ul>
+                                <li class="row mt-2 mbanking-detail-transaction">
+                                    <div class="one-fourth column">
+                                        <img src="../images/bni.png">
+                                    </div>
+                                    <div class="one-eight two-eight column ">
+                                        <h5 class="title-mbanking-detail-transaction margin-block-0">Bank BNI</h5>
+                                        <p class="norek-mbanking-detail-transaction">No. Rek : 039001000611303</p>
+                                    </div>
+                                </li>
+                                <li class="row mt-2 mbanking-detail-transaction">
+                                    <div class="one-fourth column">
+                                        <img src="../images/bri.jpg">
+                                    </div>
+                                    <div class="one-eight two-eight column">
+                                        <h5 class="title-mbanking-detail-transaction margin-block-0">Bank BRI</h5>
+                                        <p class="norek-mbanking-detail-transaction">No. Rek : 039001000611303</p>
+                                    </div>
+                                </li>
+                                <li class="row mt-2 mbanking-detail-transaction">
+                                    <div class="one-fourth column">
+                                        <img src="../images/mandiri.png">
+                                    </div>
+                                    <div class="one-eight two-eight column">
+                                        <h5 class="title-mbanking-detail-transaction margin-block-0">Bank Mandiri</h5>
+                                        <p class="norek-mbanking-detail-transaction">No. Rek : 039001000611303</p>
+                                    </div>
+                                </li>
+                                <li class="row mt-2 mbanking-detail-transaction">
+                                    <div class="one-fourth column">
+                                        <img src="../images/bca.jpg">
+                                    </div>
+                                    <div class="one-eight two-eight column">
+                                        <h5 class="title-mbanking-detail-transaction margin-block-0">Bank BCA</h5>
+                                        <p class="norek-mbanking-detail-transaction">No. Rek : 039001000611303</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all-payment-section" style="">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <p class="">Metode Pembayaran</p>
+                    <div class="img-payment-group"><img src="../images/alfamart.png"><img
+                            src="../images/indomaret.png"><img src="../images/alfamidi.svg"></div>
+                </div>
+                <div class="column">
+                    <p>Bank Transfer</p>
+                    <div class="img-payment-group"><img src="../images/bni.png"><img src="../images/bri.jpg"><img
+                            src="../images/mandiri.png"><img src="../images/bca.jpg"></div>
+                </div>
+                <div class="one-third column">
+                    <p>Jasa Pengiriman</p>
+                    <div class="img-payment-group"><img src="../images/j&t.jpg"><img src="../images/jne.jpg"><img
+                            src="../images/pos.png"><img src="../images/tiki.png"><img src="../images/sicepat.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="one-third column footer-market">
+                    <img src="../images/icon-market-footer.png">
+                    <span class="">F - Tech</span>
+                    <p>Aman, mudah, Nyaman, terlengkap, dan terpercaya</p>
+                </div>
+                <div class="one-six column">
+                    <h5 class="footer-title">F - Tech</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="about-us.html">Tentang kami</a>
+                            </li>
+                            <li>
+                                <a href="terms-conditions.html">Syarat dan ketentuan</a>
+                            </li>
+                            <li>
+                                <a href="help-center.html">Pusat bantuan</a>
+                            </li>
+                            <li>
+                                <a href="home-forum-seller.html">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-six  column">
+                    <h5 class="footer-title">Pelanggan</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="how-buy-item.html">Cara Belanja</a>
+                            </li>
+                            <li>
+                                <a href="how-payment.html">Cara Pembayaran</a>
+                            </li>
+                            <li>
+                                <a href="flash-product.html">Deals of the day</a>
+                            </li>
+                            <li>
+                                <a href="advantage-selling.html">Keuntungan berjualan</a>
+                            </li>
+                            <li>
+                                <a href="tutorial-selling.html">Cara Berjualan</a>
+                            </li>
+                            <li>
+                                <a href="easy-in-app.html">Lebih Mudah di App</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-third two column">
+                    <h5 class="footer-title">Subscribe</h5>
+                    <div class="footer-description">
+                        <div class="footer-button-group d-flex">
+                            <input type="text" class="form-control form-subcribe" placeholder="Alamat email kamu">
+                            <button class="btn btn-subcribe">Daftar</button>
+                        </div>
+                        <p>Selalu dapatkan informasi terbaru mengenai produk F - Tech dengan harga yang terjangkau </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-copy-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="half column footer-copy-box">
+                    <p class="">Copyright © 2019 F - TECH All rights reserved</p>
+                </div>
+                <div class="half column footer-copy-box">
+                    <div class="icon-group-footer">
+                        <a href="#">
+                            <i class="fa fa-facebook icon-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter icon-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram icon-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#bodytop" id="scrolltop"><button class="btn btn-sroll-top"><i class="fa fa-angle-up"></i></button></a>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script type="text/javascript">
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+
+            return {
+                'total': t,
+
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+
+            var hoursSpan = clock.querySelector('#hours');
+            var minutesSpan = clock.querySelector('#minutes');
+            var secondsSpan = clock.querySelector('#seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline = new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000);
+        initializeClock('clockdiv', deadline);
+    </script>
+</body>
+
+</html>

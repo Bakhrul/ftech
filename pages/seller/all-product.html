@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="Shortcut Icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <title>F - Tech : Furniture Marketplace</title>
+
+</head>
+
+<body>
+    <div class="navigation" id="bodytop">
+        <div class="container">
+            <div class="nav-left">
+                <!-- <img src="images/icon-market.png" style="width:20px;height:20px;position:relative;top:0.1em"> -->
+
+                <a href="index-seller.html" class="nav-brand"><img class="img-brand"><span
+                        style="font-family:helvetica;">F
+                        -
+                        Tech</span></a>
+                <span>
+                    <a href="javascript:void(0)" onclick="openNav()">Produk</a>
+
+
+                </span>
+            </div>
+
+            <nav class="nav-right">
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                <ul class="nav-list">
+                    <a href="all-transaction.html">
+                        <li class="">Lihat Transaksi </li>
+                    </a>
+                    <li>
+                        <a href="shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-list-product">
+                        <a href="home-product-seller.html"><i class="fa fa-suitcase icon-product"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <div class="">
+                            <a href="javascript:void(0)" class="nav-list-user"><i class="fa fa-user"></i>Afindo
+                                Furniture<i class="fa fa-caret-down"></i></a>
+                            <ul class="nav-dropdown dropdown-user" style="color:black;">
+                                <a href="profile-seller.html" style="border-bottom:1px solid rgba(0,0,0,.125);">
+                                    My Profile
+                                </a>
+                                <a href="../../index.html">
+                                    Keluar
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="btnclose-sidenav" onclick="closeNav()">&times;</a>
+                <ul class="">
+                    <li><a href="product-chair-all.html">Kursi</a></li>
+                    <li><a href="product-cupboard-all.html">Lemari</a></li>
+                    <li><a href="product-table-all.html">Meja</a></li>
+                    <li><a href="product-sofa-all.html">Sofa</a></li>
+                    <li><a href="product-bookshelf-all.html">Rak Buku</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="Sidenav-backdoor" id="mySidenav-backdoor"></div>
+    </div>
+
+
+    <section class="header-wrapper height-50">
+        <div class="container">
+
+            <div class=" height-50 d-flex  align-items-center justify-content-center">
+                <h5 class="title-item-header">SEMUA PRODUK</h5>
+            </div>
+            <div class="row form-search-box">
+                <div class="one column">
+                    <h3 class="text-center">Cari produk sesuai keinginan anda</h3>
+                    <div class="d-flex justify-content-center one">
+                        <div class=""><i class="fa fa-search"></i></div><input type="text"
+                            class="form-search-header"><button class="btn btn-search-header">Cari Produk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="product-wrapper">
+        <div class="container">
+            <h4 class="title-product">Semua Produk</h4>
+            <div class="row">
+                <div class="one-fourth column">
+                    <a href="product-table-one.html">
+                        <div class="box enter-product" id="product1">
+                            <div class="image-product">
+                                <img src="../../images/product-table-1.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Uno Classic Meja Kantor</h5>
+                                <p class="">Uno Classic : merupakan seri paling ekonomis....</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 750.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item1">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Offiicial
+                                        Store</span></div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Pasuruan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth column">
+                    <a href="product-table-two.html">
+                        <div class="box enter-product" id="product2">
+                            <div class="image-product">
+                                <img src="../../images/product-table-2.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Meja TV IKEA LVR123</h5>
+                                <p class="">Meja TV Minimalis ( Material : Partikel Board Berat: 5kg..</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 400.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item2">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Offiicial
+                                        Store</span></div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Pasuruan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth column">
+                    <a href="product-sofa-one.html">
+                        <div class="box enter-product" id="product3">
+                            <div class="image-product">
+                                <img src="../../images/product-sofa-1.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Sofa L filly clasic</h5>
+                                <p class="">Sofa L filly clasic ( Sofa dengan desain terbaik....</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 1.100.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item3">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span
+                                        class="">EasyDiy</span></div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Surabaya</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth column">
+                    <a href="product-sofa-two.html">
+                        <div class="box enter-product" id="product4">
+                            <div class="image-product">
+                                <img src="../../images/product-sofa-2.1.png">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Sofa Selonjoran black white</h5>
+                                <p class="">Sofa selonjoran buat keluarga besar kumpul bareng...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 1.500.000
+                                </div>
+                                <div class="product-brand d-none" id="item4">
+                                    <div class=""><i class="fa fa-users" aria-hidden="true"></i><span
+                                            class="">EasyDiy</span></div>
+                                    <div class="product-brand-location">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>Surabaya</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth  column">
+                    <a href="product-cupboard-one.html">
+                        <div class="box enter-product" id="product5">
+                            <div class="image-product">
+                                <img src="../../images/product-cupboard-1.2.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Lemari Pakaian - Putih</h5>
+                                <p class="">Perbarui model lemari dengan model yang Minimalis...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 1.100.000
+                                </div>
+                                <div class="product-brand d-none" id="item5">
+                                    <div class=""><i class="fa fa-users" aria-hidden="true"></i><span
+                                            class="">Doves</span></div>
+                                    <div class="product-brand-location">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>Gresik</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth  column">
+                    <a href="product-cupboard-two.html">
+                        <div class="box enter-product" id="product6">
+                            <div class="image-product">
+                                <img src="../../images/product-cupboard-2.2.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Lemari pakaian elegan - Hitam</h5>
+                                <p class="">lemari warna hitam akan menimbulkan kesan elegan...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 900.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item6">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Doves</span>
+                                </div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Gresik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth  column">
+                    <a href="product-chair-one.html">
+                        <div class="box enter-product" id="product7">
+                            <div class="image-product">
+                                <img src="../../images/product-chair-1.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Kursi Gaming - Black & blue</h5>
+                                <p class="">Kursi gaming dengan desain yang menarik serta kenyamanan ...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 2.400.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item7">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Doves</span>
+                                </div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Gresik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth  column">
+                    <a href="product-chair-two.html">
+                        <div class="box enter-product" id="product8">
+                            <div class="image-product">
+                                <img src="../../images/product-chair-2.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Kursi Kantor - Blue</h5>
+                                <p class="">Kursi Kantor warna biru ( desain yang elegan serta kokoh ...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 800.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item8">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Afindo</span>
+                                </div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Jombang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth column">
+                    <a href="product-bookshelf-one.html">
+                        <div class="box enter-product" id="product9">
+                            <div class="image-product">
+                                <img src="../../images/product-bookshelf-1.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Rak Buku - Coklat & Putih</h5>
+                                <p class="">Rak Buku - Coklat ( Minimalis serta terbuat dari kayu jati...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 250.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item9">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Afindo</span>
+                                </div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Jombang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="one-fourth column">
+                    <a href="product-bookshelf-two.html">
+                        <div class="box enter-product" id="product10">
+                            <div class="image-product">
+                                <img src="../../images/product-bookshelf-2.1.jpg">
+                            </div>
+                            <div class="body-product">
+                                <h5 class="title-product-item text-center">Rak Buku - Funika</h5>
+                                <p class="">Rak Buku - FUNIKA ( Material : Particle board, tahan lama...</p>
+                            </div>
+                            <div class="footer-product d-flex justify-content-between">
+                                <div class="rate-product">
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-gold"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                    <i class="fa fa-star icon-star-grey"></i>
+                                </div>
+                                <div class="price-product">
+                                    Rp. 399.000
+                                </div>
+                            </div>
+                            <div class="product-brand d-none" id="item10">
+                                <div class=""><i class="fa fa-users" aria-hidden="true"></i><span class="">Afindo</span>
+                                </div>
+                                <div class="product-brand-location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Jombang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="all-payment-section" style="">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <p class="">Metode Pembayaran</p>
+                    <div class="img-payment-group"><img src="../../images/alfamart.png"><img
+                            src="../../images/indomaret.png"><img src="../../images/alfamidi.svg"></div>
+                </div>
+                <div class="column">
+                    <p>Bank Transfer</p>
+                    <div class="img-payment-group"><img src="../../images/bni.png"><img src="../../images/bri.jpg"><img
+                            src="../../images/mandiri.png"><img src="../../images/bca.jpg"></div>
+                </div>
+                <div class="one-third column">
+                    <p>Jasa Pengiriman</p>
+                    <div class="img-payment-group"><img src="../../images/j&t.jpg"><img src="../../images/jne.jpg"><img
+                            src="../../images/pos.png"><img src="../../images/tiki.png"><img
+                            src="../../images/sicepat.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="one-third column footer-market">
+                    <img src="../../images/icon-market-footer.png">
+                    <span class="">F - Tech</span>
+                    <p>Aman, mudah, Nyaman, terlengkap, dan terpercaya</p>
+                </div>
+                <div class="one-six column">
+                    <h5 class="footer-title">F - Tech</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="about-us.html">Tentang kami</a>
+                            </li>
+                            <li>
+                                <a href="terms-conditions.html">Syarat dan ketentuan</a>
+                            </li>
+                            <li>
+                                <a href="help-center.html">Pusat bantuan</a>
+                            </li>
+                            <li>
+                                <a href="home-forum-seller.html">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-six  column">
+                    <h5 class="footer-title">Pelanggan</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="how-buy-item.html">Cara Belanja</a>
+                            </li>
+                            <li>
+                                <a href="how-payment.html">Cara Pembayaran</a>
+                            </li>
+                            <li>
+                                <a href="flash-product.html">Deals of the day</a>
+                            </li>
+                            <li>
+                                <a href="advantage-selling.html">Keuntungan berjualan</a>
+                            </li>
+                            <li>
+                                <a href="tutorial-selling.html">Cara Berjualan</a>
+                            </li>
+                            <li>
+                                <a href="easy-in-app.html">Lebih Mudah di App</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-third two column">
+                    <h5 class="footer-title">Subscribe</h5>
+                    <div class="footer-description">
+                        <div class="footer-button-group d-flex">
+                            <input type="text" class="form-control form-subcribe" placeholder="Alamat email kamu">
+                            <button class="btn btn-subcribe">Daftar</button>
+                        </div>
+                        <p>Selalu dapatkan informasi terbaru mengenai produk F - Tech dengan harga yang terjangkau </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-copy-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="half column footer-copy-box">
+                    <p class="">Copyright © 2019 F - TECH All rights reserved</p>
+                </div>
+                <div class="half column footer-copy-box">
+                    <div class="icon-group-footer">
+                        <a href="#">
+                            <i class="fa fa-facebook icon-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter icon-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram icon-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#bodytop" id="scrolltop"><button class="btn btn-sroll-top"><i class="fa fa-angle-up"></i></button></a>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/custom.js"></script>
+</body>
+
+</html>

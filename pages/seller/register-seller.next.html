@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="Shortcut Icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+
+    <title>F - Tech : Furniture Marketplace</title>
+</head>
+
+<body>
+    <section class="login-wrapper height-100">
+
+        <div class="row height">
+            <div class="half column" style=" background: linear-gradient(50deg,  #318be3 , #377ee1); height: 100vh;">
+            </div>
+            <div class="container">
+                <div class="half column height-100">
+                    <div class="box p-15 box-login">
+                        <p class="header-seller-register">Lengkapi alamat anda</p>
+                        <div class="form-group">
+                            <label></label>
+                            <select class="form-control form-login"  id="selectProvinsi"  onchange="FungsiProvinsi()" >
+                                <option>Pilih Provinsi</option>
+                                <option>Jawa Timur</option>
+                                <option>Jawa Tengah</option>
+                                <option>Jawa Barat</option>
+                            </select>
+                        </div>
+                        <div class="form-group d-none" id="kabupaten">
+                            <label></label>
+                            <select class="form-control form-login" onchange="FungsiKabupaten()">
+                                <option>Pilih Kabupaten / Kota</option>
+                                <option>Pasuruan</option>
+                                <option>Surabaya</option>
+                                <option>Malang</option>
+                            </select>
+                        </div>
+                        <div class="form-group d-none" id="kecamatan">
+                            <label></label>
+                            <select class="form-control form-login">
+                                <option>Pilih Kecamatan</option>
+                                <option>Sukorejo</option>
+                                <option>Purwosari</option>
+                                <option>Pandaan</option>
+                                <option>Purwodadi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <textarea class="form-control mt-1" rows="7" placeholder="Alamat lengkap anda"></textarea>
+                        </div>
+                        <div class="form-group form-radio-register mt-1">
+                            <input type="radio" id="male" name='gender1'><label for="male" class="text-register-terms">Saya Menyetuji syarat dan ketentuan yang berlaku.</label>&ensp;
+
+                        </div>
+                        <div class="btn-group-login">
+                            <a href="index-seller.html">
+                                <button class="btn btn-login mt-1">Daftar sekarang</button>
+                            </a>
+                        </div>
+                        <div class="auth-register">
+                            <span class="text-center">Sudah punya akun ?<a href="login-seller.html" class="auth-link">
+                                    Login disini</a></span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+<script>
+function FungsiProvinsi() {
+            var x = document.getElementById("selectProvinsi");
+            var element = document.getElementById("kabupaten");
+            element.classList.remove("d-none");
+        }
+
+        function FungsiKabupaten() {
+            var x = document.getElementById("selectKabupaten");
+            var element = document.getElementById("kecamatan");
+            element.classList.remove("d-none");
+        }
+</script>
+</body>
+
+</html>

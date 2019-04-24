@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="Shortcut Icon" href="../../images/favicon.ico" type="image/x-icon" />
+
+
+    <title>F - Tech : Furniture Marketplace</title>
+
+</head>
+
+<body>
+    <div class="navigation" id="bodytop">
+        <div class="container">
+            <div class="nav-left">
+                <!-- <img src="images/icon-market.png" style="width:20px;height:20px;position:relative;top:0.1em"> -->
+
+                <a href="index-seller.html" class="nav-brand"><img class="img-brand"><span
+                        style="font-family:helvetica;">F
+                        -
+                        Tech</span></a>
+                <span>
+                    <a href="javascript:void(0)" onclick="openNav()">Produk</a>
+
+
+                </span>
+            </div>
+
+            <nav class="nav-right">
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+                <ul class="nav-list">
+                    <a href="all-transaction.html">
+                        <li class="">Lihat Transaksi </li>
+                    </a>
+                    <li>
+                        <a href="shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-list-product">
+                        <a href="home-product-seller.html"><i class="fa fa-suitcase icon-product"
+                                aria-hidden="true"></i></a>
+                    </li>
+
+                    <li>
+                        <div class="">
+                            <a href="javascript:void(0)" class="nav-list-user"><i class="fa fa-user"></i>Afindo
+                                Furniture<i class="fa fa-caret-down"></i></a>
+                            <ul class="nav-dropdown dropdown-user" style="color:black;">
+                                <a href="profile-seller.html" style="border-bottom:1px solid rgba(0,0,0,.125);">
+                                    My Profile
+                                </a>
+                                <a href="../../index.html">
+                                    Keluar
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="btnclose-sidenav" onclick="closeNav()">&times;</a>
+                <ul class="">
+                    <li><a href="product-chair-all.html">Kursi</a></li>
+                    <li><a href="product-cupboard-all.html">Lemari</a></li>
+                    <li><a href="product-table-all.html">Meja</a></li>
+                    <li><a href="product-sofa-all.html">Sofa</a></li>
+                    <li><a href="product-bookshelf-all.html">Rak Buku</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Sidenav-backdoor" id="mySidenav-backdoor"></div>
+    </div>
+
+    <section class="header-wrapper height-50">
+        <div class="container">
+
+            <div class=" height-50 d-flex  align-items-center justify-content-center">
+                <h5 class="title-item-header">MY PROFILE</h5>
+            </div>
+        </div>
+    </section>
+    <section class="profile-seller-wrapper">
+        <div class="container">
+            <div class="row profile-seller-box">
+                <div class="one profile-seller-column column">
+                </div>
+                <div class="one-third profile-seller-column column">
+                    <img src="../../images/logo-brand-4.jpg" class="img-profile-seller">
+                    <input type="file" class="form-control mt-2">
+                    <h5 class="profile-seller-header">Information</h5>
+                    <div class="profile-seller-desc"><textarea class="form-control" rows="4"
+                            style="line-height:2;">Kami adalah produsen produk Furniture terkemuka, sebuah pabrik industri besar, didirikan untuk menawarkan produk-produk berkualitas terbaik.</textarea>
+                        <div class="row mt-2">
+                            <div class="half column">Bergabung Sejak</div>
+                            <div class="half column">23/01/2019</div>
+                            <div class="half column">Total Produk</div>
+                            <div class="half column">3</div>
+                            <div class="half column">Transaksi Penjualan</div>
+                            <div class="half column">89</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-eight profile-seller-column column">
+                    <h5 class="profile-seller-name">Afindo Furniture<span><i class="fa fa-map-marker"></i>Jawa
+                            Timur</span></h5>
+                    <p class="profile-seller-status">Lapak</p>
+                    <div class="box border-0 mt-1">
+                        <div class="tab-profile-user">
+                            <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen"><i
+                                    class="fa fa-user"></i>&ensp;Tentang</button>
+                            <button class="tablinks" onclick="openTab(event, 'Paris')"><i
+                                    class="fa fa-gear"></i>&ensp;Akun</button>
+                            <button class="tablinks" onclick="openTab(event, 'Tokyo')"><i
+                                    class="fa fa-sticky-note-o"></i>&ensp;Deskripsi</button>
+
+                        </div>
+
+                        <div id="London" class="tabcontent">
+                            <div class="row profile-items">
+                                <h5 class="header-profile-item">CONTACT INFORMATION</h5>
+                                <div class="one-third column title-profile-item">Phone </div>
+                                <div class="one-eight column desc-profile-item c-00a2f9"><input type="number"
+                                        class="form-control" value="085736054778"></div>
+                                <div class="one-third column title-profile-item">Alamat </div>
+                                <div class="one-eight column desc-profile-item"><textarea class="form-control" rows="2"
+                                        style="line-height: 2">Gresik, Jawa Timur, Indonesia</textarea></div>
+                                <div class="one-third column title-profile-item">Email</div>
+                                <div class="one-eight column desc-profile-item c-00a2f9"><input type="email"
+                                        class="form-control" value="AfindoFurniture@gmail.com"></div>
+                                <div class="one-third column title-profile-item">Jadwal dan jam Operasional</div>
+                                <div class="one-eight column desc-profile-item"><input type="text" class="form-control"
+                                        value="Setiap Hari (Pukul 08.00 – 18.00 WIB)">
+                                </div>
+                                <div class="one-third column title-profile-item">Motto</div>
+                                <div class="one-eight column desc-profile-item"><input type="text" class="form-control"
+                                        value="KEPUASAN ANDA MERUPAKAN PUJIAN BAGI KAMI"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="Paris" class="tabcontent" style="color:#666666;">
+                        <div class="row profile-items">
+                            <h5 class="header-profile-item">Informasi Akun</h5>
+                            <div class="one-third column title-profile-item">Username</div>
+                            <div class="one-eight column desc-profile-item">FurnitureTech09</div>
+                            <div class="one-third column title-profile-item">Email</div>
+                            <div class="one-eight column desc-profile-item"><input type="email" class="form-control"
+                                    value="AfindoFurniture@gmail.com"></div>
+                            <div class="one-third column title-profile-item">Password Lama</div>
+                            <div class="one-eight column desc-profile-item"><input type="password" class="form-control"
+                                    placeholder="Masukkan Password Lama"></div>
+                            <div class="one-third column title-profile-item">Password Baru</div>
+                            <div class="one-eight column desc-profile-item"><input type="password" class="form-control"
+                                    placeholder="Masukkan Password Baru"></div>
+                            <div class="one-third column title-profile-item">Phone </div>
+                            <div class="one-eight column desc-profile-item"><input type="number" class="form-control"
+                                    value="085736054778"></div>
+                        </div>
+                    </div>
+                    <div id="Tokyo" class="tabcontent">
+                        <p class="profile-seller-description"><textarea class="form-control" style="line-height:2"
+                                rows="13">Selamat Datang, kami adalah pemasok mebel rotan dari Indonesia. furniture kami terbuat dari
+bahan-bahan berikut: aluminium, besi, dan mebel kayu. Produk kami lengan kursi, sofa, meja,
+tempat tidur, rak, keranjang dll produk kami yang unik dan dibuat oleh bahan-bahan
+berkualitas tinggi. Kami selalu berusaha untuk menyediakan produk dengan standar yang
+tinggi, harga yang fleksibel, layanan pribadi, dan pengiriman yang cepat. Jangan ragu untuk
+menghubungi kami untuk informasi lebih lanjut tentang produk kami.
+
+Kami telah menjalankan bisnis selama lebih dari 18 tahun dalam memasok mebel rotan kepada
+dunia. kami sangat serius melakukan bisnis dengan perusahaan kami dan bangga mengundang anda
+untuk melihat koleksi kami saat ini. berbagai gaya kami mebel kuno dengan standar konstruksi
+tertinggi, memastikan kenyamanan dan daya tahan.
+                        </textarea>
+                        </p>
+                    </div>
+                    <a href="profile-seller.html"><button class="btn btn-cofirm-setting-user">Simpan
+                            Perubahan</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all-payment-section" style="">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <p class="">Metode Pembayaran</p>
+                    <div class="img-payment-group"><img src="../../images/alfamart.png"><img
+                            src="../../images/indomaret.png"><img src="../../images/alfamidi.svg"></div>
+                </div>
+                <div class="column">
+                    <p>Bank Transfer</p>
+                    <div class="img-payment-group"><img src="../../images/bni.png"><img src="../../images/bri.jpg"><img
+                            src="../../images/mandiri.png"><img src="../../images/bca.jpg"></div>
+                </div>
+                <div class="one-third column">
+                    <p>Jasa Pengiriman</p>
+                    <div class="img-payment-group"><img src="../../images/j&t.jpg"><img src="../../images/jne.jpg"><img
+                            src="../../images/pos.png"><img src="../../images/tiki.png"><img
+                            src="../../images/sicepat.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="one-third column footer-market">
+                    <img src="../../images/icon-market-footer.png">
+                    <span class="">F - Tech</span>
+                    <p>Aman, mudah, Nyaman, terlengkap, dan terpercaya</p>
+                </div>
+                <div class="one-six column">
+                    <h5 class="footer-title">F - Tech</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="about-us.html">Tentang kami</a>
+                            </li>
+                            <li>
+                                <a href="terms-conditions.html">Syarat dan ketentuan</a>
+                            </li>
+                            <li>
+                                <a href="help-center.html">Pusat bantuan</a>
+                            </li>
+                            <li>
+                                <a href="home-forum-seller.html">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-six  column">
+                    <h5 class="footer-title">Pelanggan</h5>
+                    <div class="footer-description">
+                        <ul>
+                            <li>
+                                <a href="how-buy-item.html">Cara Belanja</a>
+                            </li>
+                            <li>
+                                <a href="how-payment.html">Cara Pembayaran</a>
+                            </li>
+                            <li>
+                                <a href="flash-product.html">Deals of the day</a>
+                            </li>
+                            <li>
+                                <a href="advantage-selling.html">Keuntungan berjualan</a>
+                            </li>
+                            <li>
+                                <a href="tutorial-selling.html">Cara Berjualan</a>
+                            </li>
+                            <li>
+                                <a href="easy-in-app.html">Lebih Mudah di App</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="one-third two column">
+                    <h5 class="footer-title">Subscribe</h5>
+                    <div class="footer-description">
+                        <div class="footer-button-group d-flex">
+                            <input type="text" class="form-control form-subcribe" placeholder="Alamat email kamu">
+                            <button class="btn btn-subcribe">Daftar</button>
+                        </div>
+                        <p>Selalu dapatkan informasi terbaru mengenai produk F - Tech dengan harga yang terjangkau </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-copy-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="half column footer-copy-box">
+                    <p class="">Copyright © 2019 F - TECH All rights reserved</p>
+                </div>
+                <div class="half column footer-copy-box">
+                    <div class="icon-group-footer">
+                        <a href="#">
+                            <i class="fa fa-facebook icon-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter icon-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram icon-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#bodytop" id="scrolltop"><button class="btn btn-sroll-top"><i class="fa fa-angle-up"></i></button></a>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/custom.js"></script>
+    <script src="../../js/panel-user.js"></script>
+</body>
+
+</html>
